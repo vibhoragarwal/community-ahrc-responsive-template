@@ -85,8 +85,8 @@
   <name>AHRC Responsive Template</name>
   <description>This is the custom profile module (AHRC Responsive Template) for running on a Digital Factory server.</description>
   <scm>
-    <connection>scm:dummy:uri</connection>
-    <developerConnection>scm:dummy:uri</developerConnection>
+    <connection>scm:git:git@github.com:vibhoragarwal/community-ahrc-responsive-template.git</connection>
+    <developerConnection>scm:git:git@github.com:vibhoragarwal/community-ahrc-responsive-template.git</developerConnection>
   </scm>
   <repositories>
     <repository>
