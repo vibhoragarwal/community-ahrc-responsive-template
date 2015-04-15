@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<content xmlns:j="http://www.jahia.org/jahia/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0">
+    <modules jcr:primaryType="jnt:modules">
+        <ahrc-responsive-template j:dependencies="ahrc-banner ahrc-disclaimer ahrc-footer ahrc-header ahrc-quick-links ahrc-responsive-text-resizer bootstrap bootstrap-components bootstrap3-components bootstrap3-core default default-skins sitemap"
+                                j:installedModules="ahrc-responsive-template"
+                                j:modulePriority="0"
+                                j:moduleType="templatesSet"
+                                j:title="AHRC Responsive Template"
+                                jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                                jcr:primaryType="jnt:module">
+
+            <portlets jcr:primaryType="jnt:portletFolder"/>
+            <files jcr:primaryType="jnt:folder"/>
+            <contents jcr:primaryType="jnt:contentFolder"/>
+            <templates jcr:primaryType="jnt:templatesFolder">
+                <files jcr:primaryType="jnt:folder">
+                    <themes jcr:primaryType="jnt:folder">
+                            <default jcr:primaryType="jnt:folder">
+                                <logoNew.gif j:height="44"
+                                  j:width="426"
+                                  jcr:mixinTypes="jmix:image"
+                                  jcr:primaryType="jnt:file">
+                                    <jcr:content jcr:mimeType="image/gif" jcr:primaryType="jnt:resource"/>
+                                    <thumbnail jcr:mimeType="image/gif" jcr:primaryType="jnt:resource"/>
+                                    <thumbnail2 jcr:mimeType="image/gif" jcr:primaryType="jnt:resource"/>
+                                </logoNew.gif>
+                                <logoFooter.gif j:height="47"
+                                     j:width="103"
+                                     jcr:mixinTypes="jmix:image"
+                                     jcr:primaryType="jnt:file">
+                                    <jcr:content jcr:mimeType="image/gif" jcr:primaryType="jnt:resource"/>
+                                    <thumbnail jcr:mimeType="image/gif" jcr:primaryType="jnt:resource"/>
+                                    <thumbnail2 jcr:mimeType="image/gif" jcr:primaryType="jnt:resource"/>
+                                </logoFooter.gif>
+                                <mainNav_bottom.jpg j:height="12"
+                                         j:width="200"
+                                         j:xresolution="72 dots"
+                                         j:yresolution="72 dots"
+                                         jcr:mixinTypes="jmix:exif jmix:image"
+                                         jcr:primaryType="jnt:file">
+                                    <jcr:content jcr:mimeType="image/jpeg" jcr:primaryType="jnt:resource"/>
+                                    <thumbnail jcr:mimeType="image/jpeg" jcr:primaryType="jnt:resource"/>
+                                    <thumbnail2 jcr:mimeType="image/jpeg" jcr:primaryType="jnt:resource"/>
+                                </mainNav_bottom.jpg>
+                                <mainBanner.jpg j:height="156"
+                                     j:width="710"
+                                     j:xresolution="0 dots"
+                                     j:yresolution="0 dots"
+                                     jcr:mixinTypes="jmix:exif jmix:image"
+                                     jcr:primaryType="jnt:file">
+                                    <jcr:content jcr:mimeType="image/jpeg" jcr:primaryType="jnt:resource"/>
+                                    <thumbnail jcr:mimeType="image/jpeg" jcr:primaryType="jnt:resource"/>
+                                    <thumbnail2 jcr:mimeType="image/jpeg" jcr:primaryType="jnt:resource"/>
+                                </mainBanner.jpg>
+                                <quicklinks_bottom.gif j:height="15"
+                                            j:width="175"
+                                            jcr:mixinTypes="jmix:image"
+                                            jcr:primaryType="jnt:file">
+                                    <jcr:content jcr:mimeType="image/gif" jcr:primaryType="jnt:resource"/>
+                                    <thumbnail jcr:mimeType="image/gif" jcr:primaryType="jnt:resource"/>
+                                    <thumbnail2 jcr:mimeType="image/gif" jcr:primaryType="jnt:resource"/>
+                                </quicklinks_bottom.gif>
+                                <ahrccLogo.gif j:height="109"
+                                    j:width="162"
+                                    jcr:mixinTypes="jmix:image"
+                                    jcr:primaryType="jnt:file">
+                                    <jcr:content jcr:mimeType="image/gif" jcr:primaryType="jnt:resource"/>
+                                    <thumbnail jcr:mimeType="image/gif" jcr:primaryType="jnt:resource"/>
+                                    <thumbnail2 jcr:mimeType="image/gif" jcr:primaryType="jnt:resource"/>
+                                </ahrccLogo.gif>
+                                <hr_educationFund.jpg j:height="90"
+                                           j:width="195"
+                                           j:xresolution="72 dots"
+                                           j:yresolution="72 dots"
+                                           jcr:mixinTypes="jmix:exif jmix:image"
+                                           jcr:primaryType="jnt:file"
+                                           jcr:title="ahrc-logo-oct-2009-large">
+                                    <jcr:content jcr:mimeType="image/jpeg" jcr:primaryType="jnt:resource"/>
+                                    <thumbnail jcr:mimeType="image/jpeg" jcr:primaryType="jnt:resource"/>
+                                    <thumbnail2 jcr:mimeType="image/jpeg" jcr:primaryType="jnt:resource"/>
+                                </hr_educationFund.jpg>
+                            </default>
+                    </themes>
+                </files>
+                <contents jcr:primaryType="jnt:contentFolder"/>
+                    <base j:theme="/modules/ahrc-responsive-template/templates/files/themes/default"
+                  j:view="ahrc-responsive-template"
+                  jcr:mixinTypes="jmix:theme"
+                  jcr:primaryType="jnt:template">
+                    <home jcr:primaryType="jnt:pageTemplate"/>
+                    <simple jcr:primaryType="jnt:pageTemplate"/>
+                        <pagecontent jcr:primaryType="jnt:contentList">
+                            <section--container--row--grid columnsType="predefinedColumns"
+                                                 grid="12"
+                                                 jcr:mixinTypes="bootstrap3mix:predefinedColumns"
+                                                 jcr:primaryType="bootstrap3nt:columns">
+                                <section--container--row--grid-main jcr:primaryType="jnt:contentList">
+                                    <header image="/modules/ahrc-responsive-template/templates/files/themes/default/logoNew.gif"
+                                jcr:primaryType="ahrc:ahrcHeader">
+                                        <j:translation_en jcr:language="en"
+                                             jcr:mixinTypes="mix:title"
+                                             jcr:primaryType="jnt:translation"
+                                             jcr:title="Header"/>
+                                    </header>
+                                    <section--container--row--grid columnsType="predefinedColumns"
+                                                       grid="10_2"
+                                                       jcr:mixinTypes="bootstrap3mix:predefinedColumns"
+                                                       jcr:primaryType="bootstrap3nt:columns">
+                                        <section--container--row--grid-main jcr:primaryType="jnt:contentList">
+                                            <search jcr:primaryType="jnt:simpleSearchForm"
+                                      result="/sites/ahrc-resp/search-results-resp">
+                                                <j:translation_en jcr:language="en"
+                                                   jcr:mixinTypes="mix:title"
+                                                   jcr:primaryType="jnt:translation"
+                                                   jcr:title="search"/>
+                                            </search>
+                                        </section--container--row--grid-main>
+                                        <section--container--row--grid-side jcr:primaryType="jnt:contentList">
+                                            <ahrc-responsive-text-resizer jcr:primaryType="ahrc:ahrcRespTextResizer"/>
+                                        </section--container--row--grid-side>
+                                    </section--container--row--grid>
+                                </section--container--row--grid-main>
+                            </section--container--row--grid>
+                            <section--container--row--grid-1 columnsType="predefinedColumns"
+                                                   grid="12"
+                                                   jcr:mixinTypes="bootstrap3mix:predefinedColumns"
+                                                   jcr:primaryType="bootstrap3nt:columns">
+                                <section--container--row--grid-1-main jcr:primaryType="jnt:contentList">
+                                    <bootstrap-breadcrumb displayCurrentPage="true"
+                                              displayHome="true"
+                                              displayLinkOnCurrentPage="false"
+                                              displayOnFirstLevel="false"
+                                              divider="&gt;"
+                                              jcr:primaryType="jnt:bootstrapBreadcrumb"/>
+                                </section--container--row--grid-1-main>
+                            </section--container--row--grid-1>
+                            <ahrc-banner bannerLogo="/modules/ahrc-responsive-template/templates/files/themes/default/ahrccLogo.gif"
+                               bannerMainImage="/modules/ahrc-responsive-template/templates/files/themes/default/mainBanner.jpg"
+                               jcr:primaryType="ahrc:ahrcBanner"/>
+                            <section--container--row--grid-2 columnsType="predefinedColumns"
+                                                   grid="3_6_3"
+                                                   jcr:mixinTypes="bootstrap3mix:predefinedColumns"
+                                                   jcr:primaryType="bootstrap3nt:columns">
+                                <section--container--row--grid-2-side1 jcr:primaryType="jnt:contentList">
+                                    <bootstrap-navigation-menu j:baselineNode="home"
+                                                   j:layoutID="navColumn"
+                                                   j:maxDepth="4"
+                                                   j:menuItemView="menuElement"
+                                                   j:startLevel="0"
+                                                   j:view="ahrcNavMenu"
+                                                   jcr:mixinTypes="jmix:renderable"
+                                                   jcr:primaryType="jnt:bootstrapNavMenu"/>
+                                </section--container--row--grid-2-side1>
+                                <section--container--row--grid-2-extra jcr:primaryType="jnt:contentList">
+                                    <ahrc-quicklinks j:channelIncludeOrExclude="exclude"
+                                         j:channelSelection="amazon_kindle_fire_ver1 apple_ipad_ver1 apple_iphone_ver1 blackberry9530_ver1 generic_android generic_mobile samsung_gt_i9500_ver1 samsung_gt_p5200_ver1 samsung_sm_n900_ver1 samsung_sm_t210_ver1"
+                                         jcr:mixinTypes="jmix:channelSelection"
+                                         jcr:primaryType="ahrc:ahrcQuickLinks"/>
+                                </section--container--row--grid-2-extra>
+                                <section--container--row--grid-2-main jcr:primaryType="jnt:contentList">
+                                    <maiNContent j:allowedTypes="jmix:droppableContent"
+                                     j:areaView="default"
+                                     jcr:primaryType="jnt:area"/>
+                                    <ahrc-disclaimer jcr:primaryType="ahrc:ahrcDisclaimer"/>
+                                </section--container--row--grid-2-main>
+                            </section--container--row--grid-2>
+                            <ahrc-footer footerImage="/modules/ahrc-responsive-template/templates/files/themes/default/logoFooter.gif"
+                               jcr:primaryType="ahrc:ahrcFooter"/>
+                        </pagecontent>
+                </base>
+                    <content-template j:applyOn="jnt:content"
+                              j:hiddenTemplate="true"
+                              j:priority="1"
+                              j:view="ahrc-responsive-template"
+                              jcr:primaryType="jnt:contentTemplate">
+                    <pagecontent jcr:primaryType="jnt:contentList">
+                            <main-resource-display j:mainResourceView="default" jcr:primaryType="jnt:mainResourceDisplay"/>
+                    </pagecontent>
+                </content-template>
+            </templates>
+                
+                <home j:isHomePage="true"
+               j:templateName="home"
+               jcr:primaryType="jnt:page">
+                    <j:translation_en jcr:language="en"
+                              jcr:mixinTypes="mix:title"
+                              jcr:primaryType="jnt:translation"
+                              jcr:title="Home"/>
+                </home>
+        </ahrc-responsive-template>
+    </modules>
+</content>

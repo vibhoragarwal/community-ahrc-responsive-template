@@ -1,0 +1,214 @@
+/* 
+    Government of Alberta Base Style Sheet
+    CSS2 Definitions for Layout
+    developed by YellowPencil.com - January 2007
+    Modified for Alberta Human Rights and Citizenship Commission - March 2007
+*/
+/* Base Definitions with Layout */
+
+
+body  {font-size : 110% !important ;background:#5f6a72 !important;text-align:center  !important; font-family:arial,helvetica,sans-serif !important} 
+/* 
+    Primary Layout Containers 
+*/
+#pageWrap {max-width: 960px;;margin: 0 auto;text-align:left;}
+#page {margin:0 16px;padding:0 8px;background:#fff;position:relative;max-width:944px}
+#header {background:#0d3692 url(bgHeader.jpg) repeat-x top;text-align:right;height:81px;}
+#banner {position:relative;height:159px;border-bottom:1px solid #b4b4b4;border-top:1px solid #a3a3a3;clear:both;}
+#navColumn {float:left;width:200px;margin-right:16px;}
+#contentColumn {border-width:10px 235px 0 230px;border-style:solid;border-color:#fff; font-family:verdana,arial,helvetica,sans-serif;}
+#sectionNav {width:175px;float:right;margin-right:15px;}
+* html #sectionNav {margin-right:-15px;}
+#content {float:left;margin:10px 0 0 0;width: 480px;}
+#footer {clear:both;margin:0 -8px;}
+/*
+    Subsidiary Layout Containers
+*/
+/* Accessibility Helpers */
+#accessHelpers {}
+#skipToNav, #skipToContent {position: absolute;right: 20px;top: -100px;}
+#skipToNav a:focus, #skipToContent a:focus {position: absolute;top: 100px;right:20px;padding: 0.15em;width:10em;color: #fff;}
+/* Header Layout Containers */
+#logo {padding:17px 0 36px 27px;height:28px;background: url(bgHeaderLeft.jpg) no-repeat bottom left;float:left;text-align:left;}
+#logo img {float:left;padding:0 11px 0 0;}
+h1#siteTitle {float:left;color:#fff;font-weight:normal;font-size:16px;letter-spacing:1px;margin:0;padding:3px 0 0 0;line-height:34px;}
+h1#siteTitle a {color:#fff;text-decoration:none;margin:0;padding:0;line-height:34px;}
+h1#siteTitle a:hover {color:#ccc;}
+ul#metaNav {margin:0;padding:10px 10px 0 10px;list-style:none;height:21px;vertical-align:bottom;}
+ul#metaNav li {margin:0;padding:0 0 0 10px;display:inline;}
+ul#metaNav a {color:#fff;}
+ul#metaNav a:hover {color:#ccc;}
+#searchForm {margin:10px 0 0 0;float:right;background: url(bgHeaderRight.jpg) no-repeat bottom right;height:21px;padding:10px 10px 9px 10px;}
+#searchForm .searchInput {margin:0;}
+/* breadcrumbahrc, Text Resizer and Search Form */
+
+.breadcrumb>li+li:before{padding:0 !important;color:#ccc;content:"\00a0" !important}
+#breadcrumbahrc {padding:8px 50px 9px 27px;color:#000;background:#FFF;}
+#breadcrumbahrc a {color:#000;white-space:nowrap;}
+#breadcrumbahrc a:hover {color:#2d68c2;}
+#breadcrumbahrc p {margin:0;padding:0;}
+#textResizer {margin:0px 5px 0 0;padding:0;list-style:none;float:right;}
+#textResizer li {margin:0;padding:0;display:inline;}
+#textResizer a {margin:0;padding:0;display:block;float:left;}
+/* Main AHRCC Logo and Page Banner */
+#banner {background: url(dsMainBanner.gif) repeat-x top;}
+#banner #bannerLogo {position:absolute;top:24px;left:22px;z-index:1002;}
+#banner #bannerMessage {position:absolute;top:0;right:0;z-index:1001;}
+/* Main Navigation */
+/* #navColumn {background:#f0f2f4 url(<img src="/documents/mainNav_bottom.jpg">)no-repeat bottom left; padding-bottom:10px;}*/
+#navColumn ul {background:#f0f2f4 url(bgMainMenu.gif) repeat-x top;margin:0;padding:0;list-style:none;border:1px solid #d9d9d9;border-top:0;border-bottom:0;}
+#navColumn ul li {margin:0;padding:0;display:inline;}
+#navColumn ul li a {display:block;text-decoration:none;color:#000;border-top:1px solid #d9d9d9;padding:10px 10px 10px 34px;background: url(menuBullet.gif) no-repeat 10px 10px;}
+#navColumn ul li a:hover {color:#555;}
+#navColumn ul ul {margin:0;padding:0;background:none;font-size:.9em;}
+#navColumn ul ul li a {padding:5px 10px 5px 40px;background:#bac8d7;}
+#navColumn ul ul ul li a {padding:5px 10px 5px 50px;background:#7f99b4;color:#000;}
+#navColumn ul ul ul ul li a {padding:5px 10px 5px 60px;background:#7f99b4;color:#000; font-size:1.1em}
+#navColumn ul ul ul ul ul li a {padding:5px 10px 5px 70px;background:#7f99b4;color:#000; font-size:1.1em}
+/* Section Navigation */
+#sectionNav {/*border:1px solid #cacbcd;border-top:0;*/margin:0; padding:0;}
+#sectionNav h2 {font-size:1em;color:#fff;background:#7f99b4 url(bgSectionMenuHead.gif) repeat-x top;text-align:center;margin:0;padding:10px 9px;text-transform:uppercase;border-left:1px solid #B4B4B6;border-right:1px solid #B4B4B6;}
+#sectionNav ul {margin:0;padding:0;list-style:none;background:#e1e4e8 url(bgSectionMenu.gif) repeat-x top;}
+#sectionNav li {margin:0;padding:0;display:inline;}
+#sectionNav a {display:block;padding:7px 19px;color:#202020;border-top:1px solid #cacbcd;border-left:1px solid #B4B4B6;border-right:1px solid #B4B4B6;text-decoration:none;}
+#sectionNav a:hover {color:#7f99b4;}
+#sectionNav ul.sectionLinks li {display:block;padding:7px 16px 7px 34px; background: url(bg_bullet2.gif) no-repeat 10px 10px;color:#202020;border-top:1px solid #cacbcd;text-decoration:none;font-size:.95em;line-height:1em;}
+#sectionNav ul.sectionLinks li a {display:block;font-size:1.2em;padding:0;border:none;font-weight:bold;}
+/* Content Columns - Optional Single or Double column */
+.columnRight {clear:both;}
+.columnLeftFull {width:80%;}
+.columnLeftHalf {width:42%;}
+.columnLeftThird {width:55%;}
+/* The Columns are hidden from IE 5 Mac which has insufficient CSS support - columns are linearized for this browser \*/
+.columnRight {clear:none;}
+.columnLeft, .columnLeftFull, .columnLeftHalf, .columnLeftThird {float:left;clear:both;}
+.columnRight, .columnRightHalf, .columnRightThird {float:left;margin-left:1%;}
+.columnRightHalf {margin-left:1%;width:42%;}
+.columnRightThird {margin:0 -1% 0 1%;width:30%;}
+body#home .columnRight {margin:0 0 0 53%;float:none;width:auto;}
+body#home .columnLeft {width:46%;}
+/* End Hide from IE Mac */
+/* Column-Section Ornaments */
+.section {padding:0 20px 10px 20px;}
+h2.section {margin:0 0 12px -20px;padding:16px 20px 4px 0;color:#0f4770;font-weight:normal;border-bottom: 2px solid #b3d32d;}
+#content.section {padding:0;}
+#content.section>h2.section {margin: 0;}
+/* Footer Styles */
+#footer {position:relative;background:#0d3692 url(bgFooter.jpg) repeat-x;color:#fff;height:130px;}
+#footer #footerLogo {float:left;}
+#footer #footerLogo img {margin:47px 0 34px 0;padding:0 20px 0 31px;border-right:1px solid #6680ba;}
+#footer #goaLinks {margin:42px 0 0 20px;padding:0;list-style:none;float:left;width:70%;}
+#footer #siteLinks {margin:5px 0 0 20px;padding:0;list-style:none;float:left;max-width:100%;}
+#footer #copyright {margin:0 0 0 20px;padding:5px;float:left;max-width:100%;}
+#footer #copyright a {margin-left:20px;}
+#footer a {color:#fff;}
+#footer a:hover {color:#ccc;}
+#footer li {margin:0;padding:0 5px;display:inline;}
+#footer #rdp {margin:0 10px 0 0px;padding:5px;float:right;}
+/* Content Details */
+#content h1 {font-weight:normal;color:#987;}
+#content a {color:#0d3692;}
+#content a:hover {color:#333;}
+#content img.left {float:left;margin:0 16px 10px 0;}
+.clear {clear:both;line-height:.1em;font-size:.1em;}
+.layoutTable td {padding:5px;}
+img.alignLeft {float:left;margin: 0 10px 10px 0;}
+.lastupdated {font-size:.8em; margin-top: -8px;}
+/* Form elelments */
+#content fieldset {border:1px solid #ccc;padding:10px;}
+#content legend {font-weight:bold;font-size:1.2em;}
+#content label {display:block;font-weight:bold;}
+#content .button {width:50px;}
+/* Identify Floated Elements that require Clearing */ 
+.columnRight:after, #mainNav ul:after, #leadStories:after, #breadcrumbahrc:after {content:".";display:block;height:0;clear:both;visibility:hidden;}
+/* Hide for IE-Mac \*/
+* html .columnRight, * html #mainNav ul, * html #leadStories, * html #breadcrumbahrc {height:1%;}
+/* The above definitions fix IE<=6x */
+/* RedDot-only definitions */
+.hide {display:none;}
+#metadata {border:1px solid #900; margin:10px;}
+#metadata h2 {margin:0; padding:4px;}
+#metadata p {margin:4px; padding:0; }
+.instructions {color:#900;}
+.disclaimerContainer {background-color:#E3E8EE;font-size:80%; width:80%; padding:10px 20px;text-align:center; color:#444; clear:both;}
+.disclaimerClear {clear:both;}
+
+
+
+/* google */
+#content .googleSearch {
+    margin: 10px 0px 0px 0px;
+    width: 480px;
+    overflow: hidden;
+    font-family: arial, sans-serif;
+    font-size: 1.3em;
+}
+#content .googleSearch .searchDetails {
+    margin: 0px;
+    padding: 5px 5px 5px 5px;
+    width: 470px;
+    font-size: 0.75em;
+    color: #000;
+    text-align: right;
+    background: #f0f7f9;
+    border-top: 1px solid #6b90da;
+}
+#content .googleSearch ul {
+    margin: 10px 0px 0px 0px;
+    padding: 0px;
+    width: 470px;
+    list-style-type: none;
+}
+#content .googleSearch li {
+    margin: 10px 0px 0px 0px;
+}
+#content .googleSearch .title {
+    font-size: 0.85em;
+}
+#content .googleSearch .text {
+    font-size: 0.75em;
+    color: #000;
+}
+#content .googleSearch .url {
+    font-size: 0.75em;
+    color: #00804f;
+}
+#content .googleSearch .size {
+    font-size: 0.75em;
+    color: #00804f;
+}
+#content .googleSearch .searchNavigation {
+    margin: 10px 0px 0px 0px;
+    padding: 0px 0px 10px 0px;
+    width: 480px;
+    overflow: hidden;
+}
+#content .googleSearch .searchNavigation ul {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+#content .googleSearch .searchNavigation li {
+    float: left;
+    margin: 0px 0px 0px 5px;
+}
+#content .googleSearch .searchAgain {
+    margin: 0px;
+    padding: 10px 5px 10px 5px;
+    width: 470px;
+    overflow: hidden;
+    font-size: 0.75em;
+    color: #000;
+    text-align: center;
+    background: #f0f7f9;
+    border-top: 1px solid #6b90da;
+    border-bottom: 1px solid #6b90da;
+}
+
+#content .googleSearch a {
+    color: #2200cc;
+}
+#readable_content { background-color: #E1E4E8; font: 16px Arial, Tahoma,Verdana, sans-serif; line-height: 150%; letter-spacing: 1px; width: 360px; padding: 10px; } 
+#readable_content h1 { color: black; font-weight: bold; font-size: 24px; text-align: center; } 
+#readable_content h1 { text-align: center; } 
+#readable_content a { color: navy; }

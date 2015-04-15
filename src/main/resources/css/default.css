@@ -1,0 +1,27 @@
+@import "layout.css";
+/* 
+    Government of Alberta Base Style Sheet
+    CSS1 Definitions for Typography
+    developed by YellowPencil.com - January 2007
+    Modified for Alberta Human Rights and Citizenship Commission - March 2007
+*/
+/* Base HTML Definitions */
+body #navColumn, body #contentColumn, body #sectionNav {font-family:verdana,arial,helvetica,sans-serif;}
+/* Element Reset to ensure correct cascade properties across all browsers */
+table {font-size:inherit;}
+select, input, textarea {font:99% verdana,arial,helvetica,clean,sans-serif;}
+body * {line-height:1.22em;}
+body,div,form,fieldset,th,td {margin:0;padding:0;}
+table {border-collapse:collapse;border-spacing:0;}
+fieldset,img,a img {border:0;}
+address,caption,code,dfn,th,var {font-style:normal;font-weight:normal;}
+caption,th {text-align:left;}
+/* Heading Sizes */
+h1 {font-size:1.8em;}
+h2 {font-size:1.4em;}
+h3 {font-size:1.1em;}
+h4 {font-size:1em;}
+h5 {font-size:.9em;}
+h6 {font-size:.8em;}
+ 
+h1,h2,h3,h4,h5,h6 {font-family:arial,helvetical,sans-serif;}
